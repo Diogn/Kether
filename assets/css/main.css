@@ -29,12 +29,21 @@ a:hover {
   background-color: #429ded;
   border-radius: 10px;
 }
+i {
+  fill: #295a73;
+}
 span {
   margin: 0; padding: 0; 
   border: 0; 
   vertical-align: baseline;
   font-size: 100%;
+  color:  #808080;
 }
+span p {
+  color: #295a73;
+}
+
+
 #fancy-title {
   letter-spacing: 0px;
   text-transform: none;
@@ -155,4 +164,28 @@ span {
 svg {
   width: 50px;
   height: 50px;
+}
+
+/* SECTION THREE  */
+.sec-three {
+  background-color: #f9f9f9;
+}
+
+.wrapper-icon {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mini-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  padding: 25px 0 15px 0;
+}
+
+.mini-desc {
+  text-align: center;
+  font-size:14px;
+  line-height: 24px;
+  font-weight: lighter;
 }
