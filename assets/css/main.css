@@ -29,6 +29,11 @@ a:hover {
   /* background-color: #429ded; */
   border-radius: 10px;
 }
+
+.dropdown-menu  {
+  background-color: transparent !important;
+}
+
 i {
   fill: #295a73;
 }
@@ -76,9 +81,20 @@ span p {
   height: 43.86px;
 }
 
-.scroll.scrolled {
-  color: #FFF;
-  background-color: #295a73; 
+.navbar-default {
+  transition: 500ms ease;
+  background: transparent;
+}
+
+.navbar-default.scrolled {
+  background: #295a73;
+}
+
+div.dropdown-menu,.show {
+  background-color: transparent;
+}
+#navbarDropdown:hover {
+  background-color: transparent;
 }
 
 
