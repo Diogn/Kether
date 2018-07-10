@@ -26,7 +26,7 @@ a {
   word-wrap: break-word;
 }
 a:hover {
-  background-color: #429ded;
+  /* background-color: #429ded; */
   border-radius: 10px;
 }
 i {
@@ -69,20 +69,22 @@ span p {
 
 
 /*********************
- HEADER SECTION **********
+ HEADER / NAVBAR SECTION **********
  *********/
 .navbar-logo {
   width: 150px;
   height: 43.86px;
 }
-.navbar {
-  background: blue !important;
-  z-index: -1;
+
+.scroll.scrolled {
+  color: #FFF;
+  background-color: #295a73; 
 }
-/* 
-.spacer {
-  width:100%; height: 12vh;
-} */
+
+
+/************** 
+******** Hero **********
+**********************/
 
 .hero{
   background-image: url(../img/blockchain-1024x576.jpg);
@@ -169,6 +171,7 @@ svg {
 /* SECTION THREE  */
 .sec-three {
   background-color: #f9f9f9;
+  margin-bottom: 50px;
 }
 
 .wrapper-icon {
@@ -188,4 +191,60 @@ svg {
   font-size:14px;
   line-height: 24px;
   font-weight: lighter;
+}
+
+.wrapper-icon {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:10%;
+}
+
+.wrapper-icon:hover {
+  border-radius: 50%;
+  background-color: #295a73;
+}
+
+.mini-icon:hover {
+  fill: #fff;
+  z-index: 100;
+}
+
+/********************
+*********** FOOTER  ****
+*************************/
+
+.the-footer {
+  width: 100%;
+  background-color: #363636;
+  color: gray;
+}
+
+.footer-wrapper {
+  height: auto;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.footer-icon {
+  padding: 20px 0;
+}
+
+.footer-icon img {
+  width: 151px;
+  height: 45px;
+}
+
+img.gplay-icon {
+  width: 150px;
+  height: auto;
+}
+.kether-supp {
+  text-align: center;
+}
+
+.supp-icon img {
+  width: 20px;
+  height: auto;
 }
