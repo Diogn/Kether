@@ -28,6 +28,7 @@ a {
 a:hover {
   /* background-color: #429ded; */
   border-radius: 10px;
+  font-weight: 900;
 }
 
 .dropdown-menu  {
@@ -93,6 +94,19 @@ span p {
 div.dropdown-menu,.show {
   background-color: transparent;
 }
+div.dropdown-menu,.show.changed {
+  background-color: #295a73 !important;
+}
+
+a.dropdown-item:hover {
+  font-weight: 900;
+  background-color: transparent;
+}
+
+.dropdown-scroll,.show.scrolled {
+  background-color: #295a73;  
+}
+
 #navbarDropdown:hover {
   background-color: transparent;
 }
