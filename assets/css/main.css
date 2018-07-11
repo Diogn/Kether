@@ -31,10 +31,6 @@ a:hover {
   font-weight: 900;
 }
 
-.dropdown-menu  {
-  background-color: transparent !important;
-}
-
 i {
   fill: #295a73;
 }
@@ -94,8 +90,8 @@ span p {
 div.dropdown-menu,.show {
   background-color: transparent;
 }
-div.dropdown-menu,.show.changed {
-  background-color: #295a73 !important;
+a.dropdown-item,.show.scrolled {
+  color: #295a73 !important;
 }
 
 a.dropdown-item:hover {
@@ -103,8 +99,8 @@ a.dropdown-item:hover {
   background-color: transparent;
 }
 
-.dropdown-scroll,.show.scrolled {
-  background-color: #295a73;  
+.dropdown-scrolled.scrolled {
+  background-color: #295a73;
 }
 
 #navbarDropdown:hover {
