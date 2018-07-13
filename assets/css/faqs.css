@@ -1,18 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
 * {
   margin: 0; padding: 0; outline: 0;
-}
-body {
-  background-color: grey !important;
+  box-sizing: border-box;
 }
 
-div {
+body {
+  background-color: #fff;
+  font-family: 'Fjalla One', Arial, Helvetica, sans-serif !important;
+}
+
+/* TEXT */
+h1,h2,h3,h4,h5, h6 {
+  font-family: 'Fjalla One',Helvetica, sans-serif, Arial;
+}
+ol, ul, li {
+  list-style: none;
+}
+p {
+  word-wrap: break-word;
   display: block;
 }
+a {
+  color: #FFF !important;
+  word-wrap: break-word;
+  text-decoration: none !important;
+}
+a:hover {
+  /* background-color: #429ded; */
+  border-radius: 10px;
+  font-weight: 500;
+}
 
-.container {
+i {
+  fill: #295a73;
+}
+span {
+  margin: 0; padding: 0; 
+  border: 0; 
+  vertical-align: baseline;
+  font-size: 100%;
+  color:  #808080;
+}
+span p {
+  color: #295a73;
+}
+
+/*********************
+ HEADER / NAVBAR SECTION **********
+ *********/
+ .navbar-wrapper {
   max-width: 1140px !important;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  min-width: 755px;
+  margin: 0 auto;
 }
 .navbar-logo {
   width: 150px;
   height: 43.86px;
+}
+
+.navbar-default {
+  transition: 500ms ease;
+  background: transparent;
+}
+
+.navbar-default.scrolled {
+  background: #295a73;
+}
+
+a.dropdown-item,.show.scrolled {
+  color: #295a73 !important;
+}
+
+a.dropdown-item:hover {
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.dropdown-scrolled.scrolled {
+  background-color: #295a73;
+}
+
+#navbarDropdown:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .navbar{
+    background-color: #295a73;
+    /* display: block !important; */
+  }
+}
+
+
+/************** 
+******** Hero **********
+**********************/
+
+.hero{
+  background: url(../img/blockchain-1024x576.jpg), linear-gradient(135deg, #0972b2 0%, #e75270 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  height: 100vh;
+  display: block;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  top: 35%;
+  left: 30%;
+  word-wrap: break-word;
+  padding-bottom: 30px;
+}
+
+.outer-layer {
+  width: 100%;
+  height: auto;
+}
+
+.slide-one {
+  animation: btm-up 2s;
+  font-size: 3.3em;
+}
+.slide-two {
+  animation: top-down 2s;
+  font-size: 3.em;
+}
+
+@keyframes btm-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes top-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.sign-up-btn {
+  border-radius: 20px;
+  background-color: #295a73;
+  width: 150px;
+  border: 1px solid transparent;
+  color: #FFF;
+  font-size: 15px;
+  padding: 7px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-content {
+    text-align: center;
+    left: 0;
+  }
+  .outer-layer h1 {
+    font-size: 2.1em;
+  }
+  .outer-layer h4 {
+    font-size: 1.1em;
+  }
+  .sign-up-btn {
+    width:80%;
+  }
+}
+
+.mouse {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -12px;
+  border-radius: 15px;
+  border: 1px solid #888;
+  animation: intro 2s;
+}
+
+.scroll {
+  display: block;
+  width: 3px;
+  height: 8px;
+  margin: 6px auto;
+  border-radius: 4px;
+  background: #999;
+  animation: finger 2s infinite;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes finger {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
 }
