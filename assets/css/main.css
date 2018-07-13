@@ -142,7 +142,7 @@ a.dropdown-item:hover {
   height: 80vh;
   position: relative;
   top: 35%;
-  left: 10%;
+  left: 30%;
   word-wrap: break-word;
   padding-bottom: 30px;
 }
@@ -196,6 +196,10 @@ a.dropdown-item:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .hero-content {
+    text-align: center;
+    left: 0;
+  }
   .outer-layer h1 {
     font-size: 2.1em;
   }
