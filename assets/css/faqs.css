@@ -20,6 +20,7 @@ ol, ul, li {
 p {
   word-wrap: break-word;
   display: block;
+  text-align: center;
 }
 a {
   color: #FFF !important;
@@ -44,6 +45,11 @@ span {
 }
 span p {
   color: #295a73;
+}
+
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /*********************
@@ -100,15 +106,25 @@ a.dropdown-item:hover {
 /************** 
 ******** Hero **********
 **********************/
-
-.hero{
-  background: url(../img/blockchain-1024x576.jpg), linear-gradient(135deg, #0972b2 0%, #e75270 100%);
+.gradients {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0972b2 0%, #e75270 100%);
+ 
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  position: absolute;
+  overflow: hidden;
+}
+.hero {
+  background: url('../img/blockchain-1024x576.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
-  height: 100vh;
+  height: 60vh;
   display: block;
   overflow: hidden;
+  position: relative;
 }
 
 .hero-content {
@@ -126,13 +142,9 @@ a.dropdown-item:hover {
   height: auto;
 }
 
-.slide-one {
+.slide-mid-single {
   animation: btm-up 2s;
-  font-size: 3.3em;
-}
-.slide-two {
-  animation: top-down 2s;
-  font-size: 3.em;
+  font-size: 5.3em;
 }
 
 @keyframes btm-up {
@@ -146,28 +158,7 @@ a.dropdown-item:hover {
   }
 }
 
-@keyframes top-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px) translateX(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) translateX(0);
-  }
-}
 
-.sign-up-btn {
-  border-radius: 20px;
-  background-color: #295a73;
-  width: 150px;
-  border: 1px solid transparent;
-  color: #FFF;
-  font-size: 15px;
-  padding: 7px 10px;
-  margin-top: 5px;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 600px) {
   .hero-content {
@@ -226,4 +217,49 @@ a.dropdown-item:hover {
     opacity: 1;
     transform: translateY(20px);
   }
+}
+
+/******************************
+************ CONTENT  *********
+********************************/
+.spacer-1 {
+  width: 100%;
+  height: 40px;
+}
+
+.spacer-2 {
+  width: 100%;
+  height: 60px;
+}
+
+.spacer-3 {
+  width: 100%;
+  height: 80px;
+}
+
+.fancy-title-2 {
+  letter-spacing: 1px;
+  text-transform: none;
+  font-size: 18px;
+  color: #8d8d8d;
+  text-align: left;
+  font-style: normal;
+  font-weight: 200;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.fancy-title-3 {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 300;
+}
+.about-title p {
+  color: #FFF;
+}
+.colored {
+  width: 100%;
+  height: 30vh;
+  background-color: #0972b2; 
 }
