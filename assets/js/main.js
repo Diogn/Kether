@@ -1,6 +1,6 @@
 // Navbar Bg-color changed when scrolled down
 $(window).scroll(function(){
-  $('nav').toggleClass('scrolled', $(this).scrollTop() > 450);
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 250);
 });
 
 (function($) {
