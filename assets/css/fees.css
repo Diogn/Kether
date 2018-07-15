@@ -396,3 +396,53 @@ a.dropdown-item:hover {
   padding-left: 80px;
   padding-right: 80px;
 }
+
+/* Footer Section */
+.bg-white {
+  background-color: #FFF;
+  height: 50vh;
+}
+
+.the-footer {
+  font-size: 14px;
+  color: #808080;
+  font-weight: normal;
+  position: relative;
+}
+
+.footer-row {
+  padding-top: 50px;
+}
+
+.mini-side-pad {
+  padding: 0 20px;
+}
+
+.mini-pad {
+  padding: 0 2%;
+}
+
+.kether-logo-footer {
+  width: 150px;
+  height: auto;
+  vertical-align: middle;
+}
+
+div.menu-title {
+  color: #393836;
+  font-weight: 800;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+a.footer-link {
+  color: #999 !important;
+  padding: 5px 0;
+}
+
+.menu-opt {
+  margin-bottom: 40px;
+}
+.menu-item {
+  font-size: 16px;
+}
