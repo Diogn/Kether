@@ -331,3 +331,71 @@ a.dropdown-item:hover {
 .text_justify p{
   text-align: justify;
 }
+
+/* Signups Slogan Section */
+.bg-light-grey {
+  background-color: #f2f2f2;
+}
+
+.signups-btn {
+  text-align: center;
+  width: 100%;
+}
+
+.slogan p{
+  font-size: 38px;
+}
+
+.signups-btn a {
+  background-color: #0972b2;
+  padding: 10px 150px;
+  border-radius: 10px;
+}
+
+.signups-btn span {
+  color: #FFF !important;
+}
+
+@media (max-width: 560px) {
+  .slogan p {
+    font-size: 36px;
+  }
+}
+
+/********************
+*********** FOOTER  ****
+*************************/
+
+.the-footer {
+  width: 100%;
+  background-color: #363636;
+  color: gray;
+}
+
+.footer-wrapper {
+  height: auto;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.footer-icon {
+  padding: 20px 0;
+}
+
+.footer-icon img {
+  width: 151px;
+  height: 45px;
+}
+
+img.gplay-icon {
+  width: 150px;
+  height: auto;
+}
+.kether-supp {
+  text-align: center;
+}
+
+.supp-icon img {
+  width: 20px;
+  height: auto;
+}
