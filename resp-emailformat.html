@@ -10,7 +10,7 @@
 	<style type="text/css">
 		body { width: 100%; font-family: arial, 'helvetica neue', helvetica, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; padding:0; margin: 0; }
 		
-		p { line-height: 1.6; margin: 0px; }
+		p { line-height: 1.6; margin: 0px; font-size: 12px; }
 		a { text-decoration: none; overflow-wrap: break-word; }
 		table { table-layout: fixed; }
 		td { word-wrap:break-word; }
@@ -64,6 +64,21 @@
 		/* Footer */
 		.footer { background-color: rgb(41, 90, 115); border-radius: 10px; }
 		.footer-trademark { display: flex; justify-content: center; align-items: center; color: #FFF;}
+
+		@media only screen and (max-width: 600px) {
+			html {
+				font-size: 
+			}
+			.main-container {
+				width: 100%;
+			}
+			.media-reference > a > img {
+				width: 30px !important; height: 30px !important;
+			}
+			.download-reference > a > img {
+				width: 80px !important; height: 25px !important;
+			}
+		}
 	</style>
 
 	<div class="container col-12">
